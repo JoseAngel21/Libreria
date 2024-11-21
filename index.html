@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libreria</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif, sans-serif;
+            margin: 1;
+            font-size: medium;
+            text-align: center;
+        }
+        form {
+            margin-bottom: 30px;
+        }
+        label {
+            display: block;
+
+        }
+        input, textarea, button {
+            padding: 1%;
+            margin-top: 1px;
+            width: 50%;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        table, th, td {
+            border: 2.3px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        .actions button {
+            margin-right: 0%;
+        }
+
+        button{
+            font-size: small;
+            
+        }
+
+   body{
+    background-image: url("data:image/jpeg;base64,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");
+   }
+
+   
+
+    </style>
+</head>
+<body>
+
+    <h1>Libreria Jose</h1>
+
+    <form id="crud-form">
+        <input type="hidden" id="id" />
+        <label for="fecha">Fecha</label>
+        <input type="date" id="fecha" required>
+        
+        <label for="correo">Correo</label>
+        <input type="email" id="correo" required>
+        
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" required>
+        
+        <label for="asunto">Asunto</label>
+        <input type="text" id="asunto" required>
+        
+        <label for="comentario">Comentario</label>
+        <textarea id="comentario" rows="3" required></textarea>
+        
+        <button type="submit">Guardar</button>
+    </form>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Fecha</th>
+                <th>Correo</th>
+                <th>Nombre</th>
+                <th>Asunto</th>
+                <th>Comentario</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody id="data-table">
+            <!-- Aquí se mostrarán los datos -->
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+    
